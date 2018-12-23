@@ -64,7 +64,7 @@ def discriminator(x):
 
 
 然后声明GAN的训练过程。论文中的训练算法如下：
-![](http://onaxllwtn.bkt.clouddn.com/2017-10-28-01.jpg)
+![](/images/2017-10-28/2017-10-28-01.jpg)
 代码实现如下：
 ```python
 G_sample = generator(Z)
@@ -95,7 +95,7 @@ for it in range(1000000):
 ```
 
 最后得到结果：
-![GAN training](http://onaxllwtn.bkt.clouddn.com/2017-10-28-02.gif)
+![GAN training](/images/2017-10-28/2017-10-28-02.gif)
 
 参考资料：
 * [Generative Adversarial Nets in TensorFlow](https://wiseodd.github.io/techblog/2016/09/17/gan-tensorflow/  )
