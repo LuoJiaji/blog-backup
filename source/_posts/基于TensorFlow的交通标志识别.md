@@ -85,7 +85,7 @@ def display_images_and_labels(images, labels):
     plt.show()
 display_images_and_labels(images, labels)
 ```
-![标签和图像信息](http://onaxllwtn.bkt.clouddn.com/2017-04-30-1.png)
+![标签和图像信息](/images/2017-4-30/2017-4-30-1.png)
 
 同样，我们也可以显示每一个标签中的图片数据，来看一下第42号标签的数据
 ```Python
@@ -107,7 +107,7 @@ def display_label_images(images, label):
 
 display_label_images(images, 42)
 ```
-![42号标签的图像数据](http://onaxllwtn.bkt.clouddn.com/2017-04-30-2.png)
+![42号标签的图像数据](/images/2017-4-30/2017-4-30-2.png)
 
 
 通过上面的图像显示，我们会发现，这些图片的大小是不一样的。但是大多数的机器学习模型需要输入数据的维数是固定的，因此需要对图像数据进行处理，保证相同的输入数据格式。
@@ -162,7 +162,7 @@ for i in range(201):
     if i % 10 == 0:
         print(i/10,"Loss: ", loss_value)
 ```
-![损失函数值](http://onaxllwtn.bkt.clouddn.com/2017-04-30-3.png)
+![损失函数值](/images/2017-4-30/2017-4-30-3.png)
 
 模型训练好之后，既可以用测试数据来见一下模型的性能。
 随机抽取测试数据中的10张图片，然后打印出对应的实际标签和识别标签。
@@ -192,7 +192,7 @@ for i in range(len(sample_images)):
 # plt.ion()
 plt.show()
 ```
-![测试样本](http://onaxllwtn.bkt.clouddn.com/2017-04-30-4.png)
+![测试样本](/images/2017-4-30/2017-4-30-4.png)
 从中可以看到，在10个测试数据中，有7个可以正确识别。
 
 最后，加载所有的测试数据，计算并打印模型的识别正确率。
@@ -213,7 +213,7 @@ match_count = sum([int(y == y_) for y, y_ in zip(test_labels, predicted)])
 accuracy = match_count / len(test_labels)
 print("Accuracy: {:.3f}".format(accuracy))
 ```
-![模型识别正确率](http://onaxllwtn.bkt.clouddn.com/2017-04-30-5.png)
+![模型识别正确率](/images/2017-4-30/2017-4-30-5.png)
 
 可以看出，模型的正确率在70%左右。
 
