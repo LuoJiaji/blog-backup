@@ -13,7 +13,7 @@ tags:
 本文主要基于OpenAI的开源库gym中的环境再结合TensorFlow来设计与实现DQN。用到了gym中CartPole-v0的立杆子的环境。将每一步得到的状态和奖励值传递给TensorFlow中建立好的QDN网络，并对收集到的状态奖励值进行训练。算法的具体流程参考之前介绍DQN的那篇文章。今天主要介绍代码的实现。
 
 代码主要分为两个部分，首先是建立DQN网络模型，然后导入CartPole-v0环境通过其中返回的状态值和奖励值训练DQN网络。最终实现杆子尽可能长时间地保持不倒。
-![](http://onaxllwtn.bkt.clouddn.com/2017-6-28-1.png)
+![](/images/2017-6-28/2017-6-28-1.png)
 
 涉及的主要模块版本号：
 Python：3.5.3
@@ -286,10 +286,10 @@ RL.plot_cost()
 代码中将状态值作为奖励值，（默认的将离职返回为-1，不适合作为DQN的奖励值。），每一步都要保存状态信息，当总步数大于1000步的时候开始对DQN模型进行训练，前面的步用来收集用于学习的状态信息。
 每一次迭代结束之后打印迭代数，损失值，和贪婪值。最后完成100次迭代之后，画出损失值的图。
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-6-28-2.png)
+![](/images/2017-6-28/2017-6-28-2.png)
 
 将DeepQNetwork类中的参数`output_graph=True`，可以在TensorBoard中看到DQN网络的结构图：
-![](http://onaxllwtn.bkt.clouddn.com/2017-6-28-3.png )
+![](/images/2017-6-28/2017-6-28-3.png )
 
 参考资料：
 * [OpenAI](https://openai.com/ )

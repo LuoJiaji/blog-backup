@@ -13,7 +13,7 @@ Autoencoder是一种无监督的学习方法，通过编码过程自动提取数
 AutoEncoder(自编码)可以对数据进行非监督学习，首先通过encoder对数据进行压缩，然后再通过decoder对压缩数据进行恢复，并通过恢复数据与原始数据之间的误差来训练神经网络，从而可以实现网络对数据的特征提取。网络提取的中间压缩数据有点类似于PCA(主成分分析)的方法，都是从数据中提取有效信息。然后训练完成之后利用encoder部分便可以对数据进行特征提取，得到的特征数据可以用于后续的数据分析与识别。
 
 AutoEncoder的过程如下图，前半部分是Encoder结构，后半部分是Decoder部分。
-![AutoEncoder结构图](http://onaxllwtn.bkt.clouddn.com/2017-05-27-1.png)
+![AutoEncoder结构图](/images/2017-5-27/2017-5-27-1.png)
 
 下面用TensorFlow来实现一个AutoEncoder网络。
 
@@ -148,7 +148,7 @@ plt.show()    # 显示图像
 ```
 
 结果如下图，第一行是原始数据，第二行是Decoder解压缩之后的数据。
-![Decoder部分得到数据与原始数据对比](http://onaxllwtn.bkt.clouddn.com/2017-05-27-2.png)
+![Decoder部分得到数据与原始数据对比](/images/2017-5-27/2017-5-27-2.png)
 
 可以看出AutoEncoder解码得到的数据和原始数据的差别并不大。
 
@@ -163,7 +163,7 @@ plt.show()          # 显示图像
 代码中`plt.scatter()`用来显示散点图，其中前两个参数表示数据的横坐标和纵坐标，第三个参数用来设置散点图的颜色。
 
 结果如下图：
-![压缩之后的数据分布](http://onaxllwtn.bkt.clouddn.com/2017-05-27-3.png)
+![压缩之后的数据分布](/images/2017-5-27/2017-5-27-3.png)
 
 可以看出把数据压缩成二维之后可以提取数据中的部分有效信息。
 

@@ -9,7 +9,7 @@ Policy Gradients是强化学(Reinforcement Learning)中的一种算法，Policy 
 <!--more-->
 
 下面是Policy Gradients算法的伪代码：
-![Policy Gradients算法更新过程](http://onaxllwtn.bkt.clouddn.com/2017-05-26-1.png)
+![Policy Gradients算法更新过程](/images/2017-5-26/2017-5-26-1.png)
 
 算法中$v\_t$是累计回报率(通常需要归一化处理)，累计回报越大的状态跟新幅度也越大，这样也可以提高算法的收敛速度。$\pi\_\theta(s\_t,a\_t)$是神经网络根据状态输出的策略。神经网络在输出之前加了一层softmax层，这样可以得到不同行为的概率，行为选择的时候便根据得到的不同行为的概率来选择行为。
 
