@@ -10,7 +10,7 @@ tags:
 <!--more-->
 Dueling DQN将DQN中神经网络的中间层拆分成两个网络，一个为`Value`，一个为`Advantage`，然后将两个网络的值相加得到最终的网络的输出。
 网络结构如下图所示：
-![](http://onaxllwtn.bkt.clouddn.com/2017-8-6-1.png)
+![](/images/2017-8-6/2017-8-6-1.png)
 在Dueling DQN中，神经网络的输出由下面的公式确定：
 $$
 Q(s,a;\theta,\alpha,\beta) = V(s;\theta,\beta)+A(s,a;\theta,\alpha)
@@ -57,12 +57,12 @@ def _build_net(self):
 
 最终运行程序可以得到如下的损失函数：
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-8-6-2.png )
+![](/images/2017-8-6/2017-8-6-2.png )
 
 Dueling DQN的网络结构如下图：
 
-![Dueling DQN网络结构](http://onaxllwtn.bkt.clouddn.com/2017-8-6-3.png)
-![DQN网络结构](http://onaxllwtn.bkt.clouddn.com/2017-8-6-4.png)
+![Dueling DQN网络结构](/images/2017-8-6/2017-8-6-3.png)
+![DQN网络结构](/images/2017-8-6/2017-8-6-4.png)
 
 从结构图中可以看到，Dueling DQN中将DQN中的`l2`节点改变成了`Advantage`,`Value`和`Q`三个结构。
 

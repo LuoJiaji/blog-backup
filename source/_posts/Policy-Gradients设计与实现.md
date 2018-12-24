@@ -218,7 +218,7 @@ for i_episode in range(3000):
 运行程序可疑看到，当训练迭代到87步左后的时候模型已经达到比较好的效果。
 
 设置PolicyGradient类中的参数`output_graph=True`，可疑在TensorBoard中看到PolicyGradient网络模型的结构：
-![](http://onaxllwtn.bkt.clouddn.com/2017-6-29-1.png)
+![](/images/2017-6-29/2017-6-29-1.png)
 
 
 参考资料：

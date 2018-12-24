@@ -17,7 +17,7 @@ Actor Critic的优缺点：
 * **缺点**：由于单步更新参照的信息有限，而且`Actor`和`Critic`要同时学习，因此学习比较难以收敛。
 
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-8-25-1.png)
+![](/images/2017-8-25/2017-8-25-1.png)
 
 
 ## 代码实现
@@ -204,7 +204,7 @@ for i_episode in range(MAX_EPISODE):
 ```
 Tensorboard --logdir logs
 ```
-![](http://onaxllwtn.bkt.clouddn.com/2017-8-25-2.png)
+![](/images/2017-8-25/2017-8-25-2.png)
 
 
 参考资料：

@@ -72,10 +72,10 @@ gym：0.8.1
 其他的代码部分与DQN中的代码基本一致。
 
 最终程序可疑达到预期的效果，损失函数图如下：
-![](http://onaxllwtn.bkt.clouddn.com/2107-7-22-1.png)
+![](/images/2017-7-22/2107-7-22-1.png)
 
 Double DQN的网络结构如下：
-![](http://onaxllwtn.bkt.clouddn.com/2017-7-22-2.PNG)
+![](/images/2017-7-22/2017-7-22-2.PNG)
 
 可以发现Double DQN的网络结构和Deep Q Network的网络结构相同。不同的是图中`Q_target`的更新方式。
 

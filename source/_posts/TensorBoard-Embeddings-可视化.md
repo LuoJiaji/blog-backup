@@ -144,15 +144,15 @@ tensorboard –logdir=minimalsample
 
 用浏览器打开[http://127.0.0.1:6006](http://127.0.0.1:6006/ )（注意：可能会根据自己的电脑设施修改），将会在Embeddings标签中看到下图（老版本的TensorFlow没有Embeddings标签，需要对TensorFlow升级）：
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-09-17-1.png)
+![](/images/2017-9-17/2017-09-17-1.png)
 
 可以在Embeddings标签中看到MNIST数据集的PCA，点击左侧的“color by”选择器并选择Label，将会看到更加漂亮的分组。（0互相靠近，6互相靠近，等等）
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-09-17-2.png)
+![](/images/2017-9-17/2017-09-17-2.png)
 
 也可以尝试T-SNE来观察当数据样本试图形成群体时，数字会移动。
 
-![](http://onaxllwtn.bkt.clouddn.com/2017-09-17-3.png)
+![](/images/2017-9-17/2017-09-17-3.png)
 
 如果TensorBoard有问题无法显示，可以尝试改变`LOG_DIR`。可以将metadata和sprite文件的相对路径改为绝对路径。`LOG_DIR = os.getcwd()+'/minimalsample'`
 
